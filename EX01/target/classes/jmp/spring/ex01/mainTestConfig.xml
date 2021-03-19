@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<context:component-scan base-package="jmp.spring.ex01">	</context:component-scan>
+	<!-- Root Context: defines shared resources visible to all other web components 
+	
+		<bean id="chef" class="jmp.spring.ex01.Chef">
+			   <property name="type" value="중식"></property>            
+		</bean>
+		<bean id="rest" class="jmp.spring.ex01.Rest">
+			<constructor-arg name="chef" ref="chef"></constructor-arg>
+		</bean>
+	-->
+</beans>
